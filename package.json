@@ -1,0 +1,22 @@
+{
+  "name": "mercadoliebre",
+  "version": "1.0.0",
+  "description": "Proyecto de market place hecho en clases de curso Full-Stack en Digital House.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranchuXOXO/mercadoLiebre.git"
+  },
+  "author": "Francisco Salanova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranchuXOXO/mercadoLiebre/issues"
+  },
+  "homepage": "https://github.com/FranchuXOXO/mercadoLiebre#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
