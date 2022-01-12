@@ -12,6 +12,15 @@ h3 {
     font-size: 24px;
 }
 
+.burger-menu {
+    background-color: #03264C;
+    color: white;
+}
+
+.fas fa-search {
+    size: 2px;
+}
+
 .precios {
     font-size: 18px;
 }
