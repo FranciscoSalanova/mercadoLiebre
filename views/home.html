@@ -3,27 +3,26 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-        <link href="/css/styles.css" rel="stylesheet">
-        <title>Mercado Liebre</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <title>Bienvenidxs a MercadoLiebre</title>
     </head>
     <body>
-        <header>
-            
-            <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
-
-            <section>
-                <textarea rows="1" cols="25">Buscar productos, marcas</textarea>
-                <i class="fas fa-search"></i>
-            </section>
-
-            <h3>
-                Comprá en cuotas y sin tarjeta de crédito
-            </h3>
-
-            <h4>
-                Barra de navegación que posea las siguientes opciones:
-            </h4>
+        <header class="cabecera">
+            <div class="top-header">
+                <div class="logo">
+                    <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+                </div>
+                <div class="form" action="#" method="GET">
+                    <div class="input">
+                        <input type="text" name="buscar" value="Buscar productos, marcas">
+                    </div>
+                    <div class="submit">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
 
             <nav>
                 <ul>
@@ -41,10 +40,12 @@
             </nav>
 
             <div class="burger-menu">
-                <i class="fas fa-bars"></i>
+                <button>
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
 
-            <img src="/images/img-home-banner.jpg" alt="Banner de Mercado Liebre" width="350">
+            <img src="/images/img-home-banner.jpg" alt="Banner de Mercado Liebre" width="100%">
         </header>
         <main>
             <section>

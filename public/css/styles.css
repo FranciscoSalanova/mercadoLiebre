@@ -2,6 +2,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ebebeb;
 }
 
 p {
@@ -12,9 +15,46 @@ h3 {
     font-size: 24px;
 }
 
-.burger-menu {
+/* estilo aplicado a la cabera principal de la página, que incluye el logo y la barra de búsqueda */
+div.top-header {
+    padding: 5%;
+}
+
+/* estilo aplicado al logo de Mercado Liebre */
+header div.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+/* estilo aplicado al botón de búsqueda */
+header .form .submit {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #666;
+    width: 5%;
+    padding: 2px;
+}
+
+/* estilo aplicado a la leyenda de "Compra en..." de la cabecera */
+header div.top-header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cabecera {
+    background-color: #EAC926;
+}
+
+.lupita {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.burger-menu button {
     background-color: #03264C;
     color: white;
+    border-radius: 4px;
 }
 
 .fas fa-search {
