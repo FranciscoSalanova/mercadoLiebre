@@ -46,6 +46,10 @@ header div.top-header p {
     margin-top: 10px;
 }
 
+header div.menu {
+    padding-bottom: 20px;
+}
+
 div.burger-menu {
     text-align: center;
 }
@@ -65,25 +69,79 @@ section.banner img {
     width: 100%;
 }
 
-footer section.pago-tarjeta i{
-    width: 20px;
-    height: 20px;
-}
-
 footer.pie-pagina {
     background-color: white;
+    color: #666;
 }
 
+/* estilo aplicado al detalle sobre pago con tarjeta */
 section.pago-tarjeta {
     text-align: center;
 }
 
+div.tarjeta i{
+    color: #0044AA;
+    border-radius: 5px;
+    font-size: 25px;
+    height: 20px;
+    width: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+div.pago-tarjeta-titulo {
+    font-weight: bold;
+}
+
+div.pago-tarjeta-detalle p {
+    /* margin: top right bottom left */
+    margin: 0px 55px 20px 55px;
+}
+
+/* estilo aplicado al detalle sobre envíos gratis */
 section.envio-gratis {
     text-align: center;
 }
 
+div.envio i{
+    color: #0044AA;
+    border-radius: 5px;
+    font-size: 25px;
+    height: 20px;
+    width: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+div.envio-titulo {
+    font-weight: bold;
+}
+
+div.envio-detalle p {
+    margin: 0px 55px 20px 55px;
+}
+
+/* estilo aplicado al detalle sobre seguridad en las compras y envíos */
 section.seguridad {
     text-align: center;
+}
+
+div.escudo i{
+    color: #0044AA;
+    border-radius: 5px;
+    font-size: 25px;
+    height: 20px;
+    width: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+div.seguridad-titulo {
+    font-weight: bold;
+}
+
+div.seguridad-detalle p {
+    margin: 0px 55px 20px 55px;
 }
 
 div.copyright {
