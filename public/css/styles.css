@@ -15,6 +15,10 @@ h3 {
     font-size: 24px;
 }
 
+header.cabecera {
+    background-color: #EAC926;
+}
+
 /* estilo aplicado a la cabera principal de la página, que incluye el logo y la barra de búsqueda */
 div.top-header {
     padding: 5%;
@@ -42,15 +46,6 @@ header div.top-header p {
     margin-top: 10px;
 }
 
-.cabecera {
-    background-color: #EAC926;
-}
-
-.lupita {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
 div.burger-menu {
     text-align: center;
 }
@@ -66,8 +61,34 @@ div.burger-menu i{
     width: 20px;
 }
 
-.fas fa-search {
-    size: 2px;
+section.banner img {
+    width: 100%;
+}
+
+footer section.pago-tarjeta i{
+    width: 20px;
+    height: 20px;
+}
+
+footer.pie-pagina {
+    background-color: white;
+}
+
+section.pago-tarjeta {
+    text-align: center;
+}
+
+section.envio-gratis {
+    text-align: center;
+}
+
+section.seguridad {
+    text-align: center;
+}
+
+div.copyright {
+    font-size: 12px;
+    padding: 15px;
 }
 
 .precios {
