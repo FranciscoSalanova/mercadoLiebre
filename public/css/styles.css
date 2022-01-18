@@ -1,3 +1,13 @@
+/* 
+Paleta de colores:
+    Amarillo: #EAC926;
+    Azul: #03264C;
+    Celeste: #1259c3;
+    Gris oscuro: #666;
+    Gris claro: #ebebeb;
+    Verde: #39b54a; 
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
@@ -7,19 +17,12 @@ body {
     background-color: #ebebeb;
 }
 
-p {
-    font-size: 12px;
-}
-
-h3 {
-    font-size: 24px;
-}
-
+/* estilo aplicado a la cabera principal de la página, en su totalidad */
 header.cabecera {
     background-color: #EAC926;
 }
 
-/* estilo aplicado a la cabera principal de la página, que incluye el logo y la barra de búsqueda */
+/* estilo aplicado a la parte de la cabera de la página que incluye el logo y la barra de búsqueda */
 div.top-header {
     padding: 5%;
 }
@@ -67,6 +70,31 @@ div.burger-menu i{
 
 section.banner img {
     width: 100%;
+}
+
+main {
+    margin: auto;
+    max-width: 90vw;
+}
+
+main section article {
+    margin: 10px;
+}
+
+div.imagen-articulo img {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
+div.datos-articulo {
+    width: 100%;
+    background-color: white;
+}
+
+.icono-envios,
+.descuentos {
+    color: #39b54a;
 }
 
 footer.pie-pagina {
