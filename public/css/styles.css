@@ -15,10 +15,10 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: #ebebeb;
+    box-sizing: border-box;
 }
 
-/* estilo aplicado a la cabera principal de la página, en su totalidad */
-header.cabecera {
+.main-header {
     background-color: #EAC926;
 }
 
@@ -27,8 +27,7 @@ div.top-header {
     padding: 5%;
 }
 
-/* estilo aplicado al logo de Mercado Liebre */
-header div.logo {
+.logo-mercado-liebre {
     width: 50%;
     padding: 10px;
 }
@@ -77,34 +76,47 @@ main {
     max-width: 90vw;
 }
 
-article.articulo {
+.producto {
     margin-bottom: 10px;
-}
-
-section.imagen-articulo {
     background-color: white;
 }
 
-section.imagen-articulo img {
+.imagen-articulo img {
+    background-color: white;
     width: 100%;
-    box-sizing: border-box;
 }
 
-section.datos-articulo {
-    width: 100%;
+.datos-articulo {
+    position: relative;
     margin: 0%;
+    padding: 17px 0px 7px 2px;
     background-color: white;
     border: solid 1px #ebebeb;
-    box-sizing: border-box;
 }
 
-.icono-envios,
-.descuentos {
-    color: #39b54a;
-}
-
-.icono-envios {
+main section article div i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
     margin: 15px;
+    width: 19px;
+    height: 19px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: -30px;
+}
+
+.precio-descuento {
+    display: flex;
+}
+
+.descuentos {
+    flex-grow: 1;
+    color: #39b54a;
 }
 
 .precios {
@@ -116,6 +128,7 @@ section.datos-articulo {
     font-size: 16px;
     margin-left: 15px;
 }
+
 
 .descripciones {
     font-size: 16px;
