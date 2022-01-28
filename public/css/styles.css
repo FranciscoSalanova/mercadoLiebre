@@ -18,7 +18,7 @@ body {
     box-sizing: border-box;
 }
 
-.main-header {
+header {
     background-color: #EAC926;
 }
 
@@ -27,7 +27,7 @@ div.top-header {
     padding: 5%;
 }
 
-.logo-mercado-liebre {
+.mercado-liebre-logo {
     width: 50%;
     padding: 10px;
 }
@@ -50,6 +50,16 @@ header div.top-header p {
 
 header div.menu {
     padding-bottom: 20px;
+}
+
+nav.menu-navegacion {
+    display: none;
+    content-visibility: hidden;
+}
+
+div.descripciones {
+    display: none;
+    content-visibility: hidden;
 }
 
 div.burger-menu {
@@ -76,7 +86,11 @@ main {
     max-width: 90vw;
 }
 
-.producto {
+article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+article.product {
     margin-bottom: 10px;
     background-color: white;
 }
@@ -216,26 +230,40 @@ div.copyright {
     padding: 15px;
 }
 
-/* estilo exclusivo para resolución "mobile" */
-@media (max-width: 361px) {
+/* estilo para resolución "tablet" */
+@media (min-width: 481px) {
     
-    nav.menu-navegacion {
+    div.burger-menu {
+        display: none;
         content-visibility: hidden;
+    }
+
+    nav.menu-navegacion {
+        display: contents;
+        content-visibility: visible;
+    }
+    
+    div.tablet-arrange {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    article.product {
+        margin-right: 5px;
+        margin-left: 5px;
     }
 
     div.descripciones {
-        content-visibility: hidden;
+        display: contents;
+        content-visibility: visible;
     }
 }
 
-/* estilo para resolución "tablet" */
-@media (min-width: 361px) {
-    
-    div.burger-menu {
-        content-visibility: hidden;
-    }
+/* estilo para resolución "desktop" */
+@media (min-width: 769px) {
 
-    article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    div.desktop-arrange {
+        display: flex;
+        justify-content: space-between;
     }
 }
