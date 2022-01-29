@@ -22,33 +22,60 @@ header {
     background-color: #EAC926;
 }
 
-/* estilo aplicado a la parte de la cabera de la página que incluye el logo y la barra de búsqueda */
-div.top-header {
-    padding: 5%;
-}
+    div.top-header {
+        padding-top: 5%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+    }
 
-.mercado-liebre-logo {
-    width: 50%;
-    padding: 10px;
-}
+    div.header-first-line {
+        display: flex;
+        align-items: center;
+        width: 84vw;
+    }
 
-/* estilo aplicado al botón de búsqueda */
-header .form .submit {
-    background-color: #fff;
-    border: 1px solid #000;
-    color: #666;
-    width: 5%;
-    padding: 2px;
-}
+    .mercado-liebre-logo,
+    #search-box {
+        width: 50%;
+        padding: 5px;
+    }
+    
+    div.search-container {
+        display: flex;
+        font-weight: bold;
+        margin-top: 6px;
+    }
+
+        #search-field {
+            position: relative;
+            width: 100%;
+            padding: 12px 9px;
+            border-radius: 5px;
+            border: none;
+            color: #666;
+            font-size: 14px;
+        }
+
+        #search-button {
+            position: absolute;
+            left: 82%;
+            padding: 12px 2px 12px 10px;
+            color: #666;
+            background: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
 
 /* estilo aplicado a la leyenda de "Compra en..." de la cabecera */
-header div.top-header p {
-    width: 100%;
+div.top-header p {
+    width: 87%;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
+    font-size: 13px;
 }
 
-header div.menu {
+div.menu {
     padding-bottom: 20px;
 }
 
@@ -64,6 +91,7 @@ div.descripciones {
 
 div.burger-menu {
     text-align: center;
+    width: 93%;
 }
 
 div.burger-menu i{
@@ -232,6 +260,11 @@ div.copyright {
 
 /* estilo para resolución "tablet" */
 @media (min-width: 481px) {
+    
+    #search-button {
+        display: none;
+        content-visibility: hidden;
+    }
     
     div.burger-menu {
         display: none;
