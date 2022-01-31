@@ -18,80 +18,74 @@ body {
     box-sizing: border-box;
 }
 
+/*=========================================================================== */
+/* Acá arrancan los estilos del "header"===================================== */
+/*=========================================================================== */
+
 header {
     background-color: #EAC926;
 }
 
-    div.top-header {
-        padding-top: 5%;
-        padding-bottom: 3%;
-        padding-left: 5%;
-    }
+div.top-header {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+}
 
-    div.header-first-line {
-        display: flex;
-        align-items: center;
-        width: 84vw;
-    }
-
-    .mercado-liebre-logo,
-    #search-box {
-        width: 50%;
-        padding: 5px;
-    }
-    
-    div.search-container {
-        display: flex;
-        font-weight: bold;
-        margin-top: 6px;
-    }
-
-        #search-field {
-            position: relative;
-            width: 100%;
-            padding: 12px 9px;
-            border-radius: 5px;
-            border: none;
-            color: #666;
-            font-size: 14px;
-        }
-
-        #search-button {
-            position: absolute;
-            left: 82%;
-            padding: 12px 2px 12px 10px;
-            color: #666;
-            background: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-/* estilo aplicado a la leyenda de "Compra en..." de la cabecera */
 div.top-header p {
-    width: 87%;
+    width: 90%;
     text-align: center;
     margin-top: 20px;
     font-size: 13px;
 }
 
-div.menu {
-    padding-bottom: 20px;
+div.header-first-line {
+    display: flex;
+    align-items: center;
+    width: 84vw;
 }
 
-nav.menu-navegacion {
-    display: none;
-    content-visibility: hidden;
+.mercado-liebre-logo,
+#search-box {
+    width: 50%;
+    padding: 5px;
 }
 
-div.descripciones {
+div.search-container {
+    display: flex;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+#search-field {
+    position: relative;
+    width: 100%;
+    padding: 12px 9px;
+    border-radius: 5px;
+    border: none;
+    color: #666;
+    font-size: 14px;
+}
+
+#search-button {
+    position: absolute;
+    left: 82%;
+    padding: 12px 2px 12px 10px;
+    color: #666;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.main-navbar {
     display: none;
     content-visibility: hidden;
 }
 
 div.burger-menu {
     text-align: center;
-    width: 93%;
+    width: 95%;
 }
 
 div.burger-menu i{
@@ -108,6 +102,10 @@ div.burger-menu i{
 section.banner img {
     width: 100%;
 }
+
+/*=========================================================================== */
+/* Acá arrancan los estilos del "main"======================================= */
+/*=========================================================================== */
 
 main {
     margin: auto;
@@ -152,6 +150,11 @@ main section article div i {
     top: -30px;
 }
 
+div.descripciones {
+    display: none;
+    content-visibility: hidden;
+}
+
 .precio-descuento {
     display: flex;
 }
@@ -171,19 +174,15 @@ main section article div i {
     margin-left: 15px;
 }
 
-
-.descripciones {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 15px;
-}
+/*=========================================================================== */
+/* Acá arrancan los estilos del "main"======================================= */
+/*=========================================================================== */
 
 footer.pie-pagina {
     background-color: white;
     color: #666;
 }
 
-/* estilo aplicado al detalle sobre pago con tarjeta */
 section.pago-tarjeta {
     text-align: center;
 }
@@ -207,7 +206,6 @@ div.pago-tarjeta-detalle p {
     margin: 0px 55px 20px 55px;
 }
 
-/* estilo aplicado al detalle sobre envíos gratis */
 section.envio-gratis {
     text-align: center;
 }
@@ -230,7 +228,6 @@ div.envio-detalle p {
     margin: 0px 55px 20px 55px;
 }
 
-/* estilo aplicado al detalle sobre seguridad en las compras y envíos */
 section.seguridad {
     text-align: center;
 }
@@ -261,20 +258,78 @@ div.copyright {
 /* estilo para resolución "tablet" */
 @media (min-width: 481px) {
     
-    #search-button {
-        display: none;
-        content-visibility: hidden;
+    div.top-header {
+        padding: 3%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    
+
+    .mercado-liebre-logo {
+        width: 360px;
+    }
+
+    div.search-container {
+        display: flex;
+        font-weight: bold;
+        margin: 0px 0px 0px 10px;
+    }
+
+    #search-field {
+        position: initial;
+        width: 180px;
+        border-radius: 3px;
+        border: none;
+        color: #666;
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    #search-button {
+        position: initial;
+        border-radius: 3px;
+        margin: 0px 0px 0px 5px;
+        color: black;
+        border: solid black 1px;
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    div.top-header p {
+        font-size: 14px;
+    }
+       
     div.burger-menu {
         display: none;
         content-visibility: hidden;
     }
 
-    nav.menu-navegacion {
-        display: contents;
+    nav.main-navbar {
+        display: flex;
         content-visibility: visible;
+        justify-content: space-between;
+        padding-left: 3%;
+        padding-right: 3%;
     }
+
+    nav.main-navbar a {
+        text-decoration: none;
+        color: #222222;
+        display: inline-block;
+        padding: 15px 0px;
+        font-size: 16px;    
+    }
+
+    nav.main-navbar ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav.main-navbar li {
+        margin: 0px 10px;   
+    }   
     
     div.tablet-arrange {
         display: flex;
@@ -289,6 +344,9 @@ div.copyright {
     div.descripciones {
         display: contents;
         content-visibility: visible;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 15px;
     }
 }
 
