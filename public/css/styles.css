@@ -109,7 +109,6 @@ section.banner img {
 
 main {
     margin: auto;
-    max-width: 90vw;
 }
 
 article {
@@ -176,30 +175,56 @@ div.descripciones {
 
 form.create-form {
     background-color: #ebebeb;
-    padding: 20px 15px;
-    text-align: center;
+    padding: 20px 20px;
+
 }
 
 div.form-control {
     margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+div.form-control label {
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 div.form-control input {
     margin-bottom: 5px;
-    width: 60%;
-    padding: 12px;
+    display: block;
+    width: 100%;
+    padding: 12px 8px;
     border-radius: 5px;
     border: none;
 }
 
-div.form-control button {
+div.form-control input checkbox {
+    margin: 3px 2px;
+}
+
+.profile-selection {
+    display: flex;
+    margin: 15px 0px;
+}
+
+.category-type {
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+}
+
+div.form-control-button button{
     background-color: #0044AA;
     margin-top: 5px;
     padding: 12px;
-    width: 62%;
+    width: 100%;
     border-radius: 5px;
     border: none;
     color: white;
+    margin-right: 0px;
 }
 
 /*=========================================================================== */
@@ -230,7 +255,6 @@ div.pago-tarjeta-titulo {
 }
 
 div.pago-tarjeta-detalle p {
-    /* margin: top right bottom left */
     margin: 0px 55px 20px 55px;
 }
 
@@ -359,6 +383,11 @@ div.copyright {
         margin: 0px 10px;   
     }   
     
+    main {
+        margin: auto;
+        max-width: 90vw;
+    }
+
     div.tablet-arrange {
         display: flex;
         justify-content: space-between;
@@ -375,6 +404,39 @@ div.copyright {
         font-size: 16px;
         font-weight: bold;
         margin: 15px;
+    }
+
+    form.create-form {
+        background-color: #ebebeb;
+        padding: 20px 10px;
+        margin: 15px 55px;
+        text-align: center;
+    }
+    
+    div.form-control {
+        margin-bottom: 15px;
+    }
+    
+    div.form-control label {
+        margin-bottom: 5px;
+        display: block;
+        width: 100%;
+    }
+    
+    div.form-control input {
+        width: 100%;
+        padding: 12px;
+    }
+    
+    div.form-control-button button{
+        background-color: #0044AA;
+        margin-top: 5px;
+        padding: 12px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        margin-right: 0px;
     }
 }
 

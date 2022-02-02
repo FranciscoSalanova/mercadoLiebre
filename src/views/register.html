@@ -65,20 +65,37 @@
                 </div>
                 <div class="form-control">
                     <label for="usertype">Perfil de usuario</label>
-                    <select class="user-type" name="usertype">
-                        <option value="comprar">Comprar</option>
-                        <option value="vender">Vender</option>
-                    </select>
+                    <div class="profile-selection">
+                        <input type="radio" name="usertype" id="comprador" value="Comprador">
+                        <label for="comprador">Comprador</label>
+                        <input type="radio" name="usertype" id="vendedor" value="Vendedor">
+                        <label for="vendedor">Vendedor</label>
+                    </div>
                 </div>
                 <div class="form-control">
                     <label for="product-category">Intereses</label>
-                    <select class="control" name="product-category">
-                        <option value="electro">Electro</option>
-                        <option value="indumentaria">Moda</option>
-                        <option value="hogar">Hogar</option>
-                        <option value="jugueteria">Juguetería</option>
-                        <option value="vidasana">Vida sana</option>
-                    </select>
+                    <div class="category-selection">
+                        <div class="category-type">
+                            <input type="checkbox" name="category" id="electro" value="Electro">
+                            <label for="electro">Electro</label>
+                        </div>
+                        <div class="category-type">
+                            <input type="checkbox" name="category" id="moda" value="Moda">
+                            <label for="moda">Moda</label>
+                        </div>
+                        <div class="category-type">
+                            <input type="checkbox" name="category" id="hogar" value="Hogar">
+                            <label for="hogar">Hogar</label>                            
+                        </div>
+                        <div class="category-type">
+                            <input type="checkbox" name="category" id="jugueteria" value="Jugueteria">
+                            <label for="jugueteria">Juguetería</label>                            
+                        </div>
+                        <div class="category-type">
+                            <input type="checkbox" name="category" id="vidasana" value="Moda">
+                            <label for="vidasana">Vida sana</label>                            
+                        </div>
+                    </div>
                 </div>
                 <div class="form-control">
                     <label for="profile-photo">Foto de usuario</label>
@@ -89,7 +106,7 @@
                 <div class="form-control">
                     <input name="checkuserpass" type="password" placeholder="Volvé a ingresar tu contraseña">
                 </div>
-                <div class="form-control">
+                <div class="form-control-button">
                     <button name="delete" type="reset">Borrar datos</button>
                     <button name="send" type="submit">Crear usuario</button>
                 </div>
