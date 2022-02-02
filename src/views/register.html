@@ -39,8 +39,8 @@
                 </ul>
     
                 <ul class="right-navbar">
-                    <li><a href="#">Creá tu cuenta <i class="fas fa-credit-card"></i></a></li>
-                    <li><a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="/registroUsuario">Creá tu cuenta <i class="fas fa-credit-card"></i></a></li>
+                    <li><a href="/loginUsuario">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                     <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
             </nav>
@@ -49,32 +49,29 @@
             </div>
         </header>
         <main>
-            <form action="/" method="POST">
-                <div class="full-name-field">
-                    <label for="fullname">Nombre y apellido:</label>
-                    <input name="user-name" type="text">
-                </div>
-                <div class="username-field">
-                    <label for="username">Nombre de usuario:</label>
-                    <input name="username" type="text">
-                </div>
-                <div class="birth-date-field">
-                    <label for="birthdate">Fecha de nacimiento:</label>
-                    <input name="birthdate" type="date">
-                </div>
-                <div class="address-field">
-                    <label for="address">Dirección:</label>
-                    <input name="address" type="text">
+            <form class="create-form" action="/" method="POST">
+                <div class="form-control">
+                    <input name="fullname" type="text" placeholder="Nombre y apellido">
                 </div>
                 <div class="form-control">
-                    <label for="usertype">¿Qué desea hacer?:</label>
+                    <input name="username" type="text" placeholder="Nombre de usuario">
+                </div>
+                <div class="form-control">
+                    <label for="birthdate">Fecha de nacimiento</label>
+                    <input name="birthdate" type="date">
+                </div>
+                <div class="form-control">
+                    <input name="useraddress" type="text" placeholder="Dirección">
+                </div>
+                <div class="form-control">
+                    <label for="usertype">Perfil de usuario</label>
                     <select class="user-type" name="usertype">
                         <option value="comprar">Comprar</option>
                         <option value="vender">Vender</option>
                     </select>
                 </div>
                 <div class="form-control">
-                    <label for="product-category">Categoría:</label>
+                    <label for="product-category">Intereses</label>
                     <select class="control" name="product-category">
                         <option value="electro">Electro</option>
                         <option value="indumentaria">Moda</option>
@@ -84,23 +81,21 @@
                     </select>
                 </div>
                 <div class="form-control">
-                    <label for="profile-photo">Foto de usuario:</label>
+                    <label for="profile-photo">Foto de usuario</label>
                 </div>
                 <div class="form-control">
-                    <label for="password">Ingresar una contraseña:</label>
-                    <input name="password" type="password">
+                    <input name="userpass" type="password" placeholder="Elegí tu contraseña">
                 </div>
                 <div class="form-control">
-                    <label for="confirm-password">Confirmar la contraseña ingresada:</label>
-                    <input name="confirm-password" type="password">
+                    <input name="checkuserpass" type="password" placeholder="Volvé a ingresar tu contraseña">
                 </div>
                 <div class="form-control">
-                    <button type="submit">Crear usuario</button>
-                    <button type="reset">Borrar datos</button>
+                    <button name="delete" type="reset">Borrar datos</button>
+                    <button name="send" type="submit">Crear usuario</button>
                 </div>
             </form>
         </main>
-        <footer class="pie-pagina">
+        <footer>
             <section class="pago-tarjeta">
                 <div class="tarjeta">
                     <i class="fas fa-credit-card"></i>

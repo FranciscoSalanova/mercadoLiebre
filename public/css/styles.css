@@ -174,11 +174,39 @@ div.descripciones {
     margin-left: 15px;
 }
 
+form.create-form {
+    background-color: #ebebeb;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+div.form-control {
+    margin-bottom: 15px;
+}
+
+div.form-control input {
+    margin-bottom: 5px;
+    width: 60%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+div.form-control button {
+    background-color: #0044AA;
+    margin-top: 5px;
+    padding: 12px;
+    width: 62%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
 /*=========================================================================== */
-/* Acá arrancan los estilos del "main"======================================= */
+/* Acá arrancan los estilos del "footer"===================================== */
 /*=========================================================================== */
 
-footer.pie-pagina {
+footer {
     background-color: white;
     color: #666;
 }
