@@ -99,7 +99,7 @@ div.burger-menu i{
     width: 20px;
 }
 
-section.banner img {
+section.top-banner img {
     width: 100%;
 }
 
@@ -108,7 +108,7 @@ section.banner img {
 /*=========================================================================== */
 
 main {
-    margin: auto;
+    margin: 10px;
 }
 
 article {
@@ -120,17 +120,21 @@ article.product {
     background-color: white;
 }
 
+article.product:hover .product-description {
+    opacity: 1;
+}
+
 .imagen-articulo img {
     background-color: white;
     width: 100%;
 }
 
-.datos-articulo {
+div.datos-articulo {
     position: relative;
     margin: 0%;
     padding: 17px 0px 7px 2px;
     background-color: white;
-    border: solid 1px #ebebeb;
+    border-top: solid 1px #ebebeb;
 }
 
 main section article div i {
@@ -149,12 +153,15 @@ main section article div i {
     top: -30px;
 }
 
-div.descripciones {
-    display: none;
-    content-visibility: hidden;
+div.product-description {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0;
+    transition: all 450ms;
 }
 
-.precio-descuento {
+.article-pricing {
     display: flex;
 }
 
@@ -307,7 +314,10 @@ div.copyright {
     padding: 15px;
 }
 
-/* estilo para resolución "tablet" */
+/*=========================================================================== */
+/* Definición de los estilos para TABLET===================================== */
+/*=========================================================================== */
+
 @media (min-width: 481px) {
     
     div.top-header {
@@ -396,14 +406,6 @@ div.copyright {
     article.product {
         margin-right: 5px;
         margin-left: 5px;
-    }
-
-    div.descripciones {
-        display: contents;
-        content-visibility: visible;
-        font-size: 16px;
-        font-weight: bold;
-        margin: 15px;
     }
 
     form.create-form {
