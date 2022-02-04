@@ -130,6 +130,11 @@ main section article div i {
     position: absolute;
     right: 5px;
     top: -30px;
+    transition: all 450ms;
+}
+
+main section article div i:hover {
+    transform: rotate(-90deg);
 }
 
 article.product {
@@ -157,6 +162,7 @@ div.product-description {
     font-weight: bold;
     margin-top: 10px;
     font-size: 16px;
+    padding-left: 10px;
     opacity: 0;
     transition: all 450ms;
 }
@@ -224,7 +230,7 @@ div.form-control input checkbox {
     width: 150px;
 }
 
-div.form-control-button button{
+div.form-control-button button {
     background-color: #0044AA;
     margin-top: 5px;
     padding: 12px;
@@ -233,6 +239,11 @@ div.form-control-button button{
     border: none;
     color: white;
     margin-right: 0px;
+    transition: all 450ms;
+}
+
+div.form-control-button button:hover {
+    background-color: #0022AA;
 }
 
 /*=========================================================================== */
@@ -242,9 +253,15 @@ div.form-control-button button{
 footer {
     background-color: white;
     color: #666;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
-section.pago-tarjeta {
+div.footer-reminders {
+    display: flex;
+}
+
+section.footer-reminder {
     text-align: center;
 }
 
@@ -254,7 +271,7 @@ div.tarjeta i{
     font-size: 25px;
     height: 20px;
     width: 30px;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 10px;
 }
 
@@ -262,12 +279,9 @@ div.pago-tarjeta-titulo {
     font-weight: bold;
 }
 
-div.pago-tarjeta-detalle p {
+div.reminder-message p {
     margin: 0px 55px 20px 55px;
-}
-
-section.envio-gratis {
-    text-align: center;
+    font-size: 12px;
 }
 
 div.envio i{
@@ -284,14 +298,6 @@ div.envio-titulo {
     font-weight: bold;
 }
 
-div.envio-detalle p {
-    margin: 0px 55px 20px 55px;
-}
-
-section.seguridad {
-    text-align: center;
-}
-
 div.escudo i{
     color: #0044AA;
     border-radius: 5px;
@@ -304,10 +310,6 @@ div.escudo i{
 
 div.seguridad-titulo {
     font-weight: bold;
-}
-
-div.seguridad-detalle p {
-    margin: 0px 55px 20px 55px;
 }
 
 div.copyright {
@@ -443,7 +445,10 @@ div.copyright {
     }
 }
 
-/* estilo para resolución "desktop" */
+/*=========================================================================== */
+/* Definición de los estilos para DESKTOP==================================== */
+/*=========================================================================== */
+
 @media (min-width: 769px) {
 
     div.desktop-arrange {
