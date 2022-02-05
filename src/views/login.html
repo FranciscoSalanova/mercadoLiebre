@@ -51,10 +51,10 @@
         <main>
             <form class="create-form" action="/" method="POST">
                 <div class="form-control">
-                    <input name="user-name" type="text" placeholder="Nombre de usuario">
+                    <input name="user-name" type="text" required="required" minlength="4" placeholder="Nombre de usuario">
                 </div>
                 <div class="form-control">
-                    <input name="user-name" type="password" placeholder="Contraseña">
+                    <input name="user-name" type="password" required="required" minlength="8" placeholder="Contraseña">
                 </div>
                 <div class="form-control-button">
                     <button type="submit">Ingresar</button>

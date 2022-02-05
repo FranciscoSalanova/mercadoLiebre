@@ -51,10 +51,10 @@
         <main>
             <form class="create-form" action="/" method="POST">
                 <div class="form-control">
-                    <input name="fullname" type="text" placeholder="Nombre y apellido">
+                    <input name="fullname" type="text" minlength="4" placeholder="Nombre y apellido">
                 </div>
                 <div class="form-control">
-                    <input name="username" type="text" placeholder="Nombre de usuario">
+                    <input name="username" type="text" minlength="4" placeholder="Nombre de usuario">
                 </div>
                 <div class="form-control">
                     <label for="birthdate">Fecha de nacimiento</label>
@@ -101,10 +101,10 @@
                     <label for="profile-photo">Foto de usuario</label>
                 </div>
                 <div class="form-control">
-                    <input name="userpass" type="password" placeholder="Elegí tu contraseña">
+                    <input name="userpass" type="password" required="required" minlength="8" placeholder="Elegí tu contraseña">
                 </div>
                 <div class="form-control">
-                    <input name="checkuserpass" type="password" placeholder="Volvé a ingresar tu contraseña">
+                    <input name="checkuserpass" type="password" required="required" minlength="8" placeholder="Volvé a ingresar tu contraseña">
                 </div>
                 <div class="form-control-button">
                     <button name="delete" type="reset">Borrar datos</button>
