@@ -1,85 +1,151 @@
-/* 
-Paleta de colores:
-    Amarillo: #EAC926;
-    Azul: #03264C;
-    Celeste: #1259c3;
-    Gris oscuro: #666;
-    Gris claro: #ebebeb;
-    Verde: #39b54a; 
-*/
+/* ========================================================
+    Reset
+======================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+/* Set up the body */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
+    line-height: 1.5;
+    min-height: 100vh;
     padding: 0px;
     background-color: #ebebeb;
+    color: #666;
+}
+
+/* make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+text,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+h3 {
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/* ========================================================
+    Utility classes
+======================================================== */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+/* utility class for screen-reading assistance functionality */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
 }
 
-h2 {
-    font-size: 2rem;
-}
-
-/*=========================================================================== */
-/* Acá arrancan los estilos del "header"===================================== */
-/*=========================================================================== */
+/* ========================================================
+    HEADER
+======================================================== */
 
 header {
     background-color: #EAC926;
 }
 
 div.top-header {
-    padding-top: 5%;
-    padding-bottom: 3%;
-    padding-left: 5%;
-}
-
-div.top-header p {
-    width: 90%;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 13px;
-}
-
-div.header-first-line {
     display: flex;
+    width: 100vw;
     align-items: center;
-    width: 84vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.mercado-liebre-logo,
-#search-box {
+div.mercado-liebre-logo {
     width: 50%;
     padding: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+div.mercado-liebre-logo img {
+    width: 100%;
+    padding: 5px;
+    max-width: 280px;
+}
+
+#search-box {
+    width: 50%
 }
 
 div.search-container {
     display: flex;
-    font-weight: bold;
-    margin-top: 6px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin: 11px;
+    padding: 5px;
+    border-radius: 7px;
 }
 
 #search-field {
-    position: relative;
-    width: 100%;
-    padding: 12px 9px;
-    border-radius: 5px;
-    border: none;
-    color: #666;
-    font-size: 14px;
+    width: 80%;
+    height: 28px;
+    border-style: none;
+    background-color: transparent;
 }
 
-#search-button {
-    position: absolute;
-    left: 82%;
-    padding: 12px 2px 12px 10px;
-    color: #666;
-    background: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
+.fa-search {
+    width: 23px;
+    height: 23px;
+    padding: 3px 8px;
+    border-left: 1px solid #ebebeb;
+}
+
+section.top-header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .main-navbar {
@@ -107,12 +173,15 @@ section.top-banner img {
     width: 100%;
 }
 
-/*=========================================================================== */
-/* Acá arrancan los estilos del "main"======================================= */
-/*=========================================================================== */
+/* ========================================================
+    MAIN
+======================================================== */
 
 main {
     margin: 10px;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
 }
 
 article {
@@ -194,12 +263,20 @@ div.descuentos {
 form.create-form {
     background-color: #ebebeb;
     padding: 20px 20px;
-
+    width: 100%;
+    max-width: 550px;
 }
 
 div.form-control {
-    margin-bottom: 15px;
-    margin-right: 20px;
+    width: 100%;
+    margin: 25px 0;
+}
+
+input.form-container-input {
+    width: 100%;
+    padding: 12px 13px;
+    border-radius: 5px;
+    border-style: none;
 }
 
 div.form-control label {
@@ -328,41 +405,16 @@ div.copyright {
 
 @media (min-width: 481px) {
     
-    div.top-header {
-        padding: 3%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    div.mercado-liebre-logo {
+        width: 33%;
     }
 
-    .mercado-liebre-logo {
-        width: 360px;
+    #search-box {
+        width: 33%;
     }
 
-    div.search-container {
-        display: flex;
-        font-weight: bold;
-        margin: 0px 0px 0px 10px;
-    }
-
-    #search-field {
-        position: initial;
-        width: 180px;
-        border-radius: 3px;
-        border: none;
-        color: #666;
-        font-size: 12px;
-        padding: 0px;
-    }
-
-    #search-button {
-        position: initial;
-        border-radius: 3px;
-        margin: 0px 0px 0px 5px;
-        color: black;
-        border: solid black 1px;
-        font-size: 14px;
-        padding: 0px;
+    section.top-header-title {
+        width: 33%;
     }
 
     div.top-header p {
@@ -374,32 +426,52 @@ div.copyright {
         content-visibility: hidden;
     }
 
-    nav.main-navbar {
+    .main-navbar {
         display: flex;
         content-visibility: visible;
         justify-content: space-between;
-        padding-left: 3%;
-        padding-right: 3%;
+        align-items: center;
     }
 
-    nav.main-navbar a {
+    nav a {
+        font-size: 12px;
         text-decoration: none;
-        color: #222222;
-        display: inline-block;
-        padding: 15px 0px;
-        font-size: 16px;    
+        color: #666;
     }
 
-    nav.main-navbar ul {
+    .left-navbar {
         display: flex;
         list-style: none;
-        margin: 0;
-        padding: 0;
+        justify-content: flex-start;
+        width: 45vw;
+        padding: 0px;
     }
 
-    nav.main-navbar li {
-        margin: 0px 10px;   
-    }   
+    .left-navbar li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: 20px;   
+    }
+
+    .right-navbar {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        width: 45vw;
+        padding: 0px;
+    }
+
+    .right-navbar li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-right: 30px;  
+    }
     
     main {
         margin: auto;
