@@ -39,11 +39,14 @@ select {
     }
 }
 
+h2 {
+    font-size: 24px;
+}
+
 h3 {
     text-align: center;
     font-size: 12px;
 }
-
 
 /* ========================================================
     Utility classes
@@ -178,15 +181,23 @@ section.top-banner img {
 ======================================================== */
 
 main {
-    margin: 10px;
+    margin: auto;
     width: 90vw;
-    display: flex;
-    justify-content: center;
 }
 
 article {
     margin-bottom: 10px;
     transition: all 450ms;
+}
+
+main img {
+    width: 100%;
+}
+
+main article {
+    padding: 5px 0;
+    margin: 5px 0;
+    background-color: white;
 }
 
 main section article div i {
@@ -210,11 +221,18 @@ main section article div i:hover {
     transform: rotate(-90deg);
 }
 
-article.product {
-    background-color: white;
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-article.product:hover {
+.product {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.product:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
@@ -478,14 +496,8 @@ div.copyright {
         max-width: 90vw;
     }
 
-    div.tablet-arrange {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    article.product {
-        margin-right: 5px;
-        margin-left: 5px;
+    .products article {
+        width: 45%;
     }
 
     form.create-form {
@@ -531,6 +543,10 @@ div.copyright {
     div.desktop-arrange {
         display: flex;
         justify-content: space-between;
+    }
+
+    .products article {
+        width: 23%;
     }
 }
 
